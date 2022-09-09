@@ -10,11 +10,11 @@ cd dokerized-cinema-api
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-set DB_HOST=db
-set DB_NAME=app
-set DB_USER=postgres
-set DB_PASSWORD=password
-set SECRET_KEY=django-insecure-6vubhk2$++agnctay_4pxy_8cq)mosmn(*-#2b^v4cgsh-^!i3
+set DB_HOST=<your db hostname>
+set DB_NAME=<your db name>
+set DB_USER=<your db username>
+set DB_PASSWORD=<your db user password>
+set SECRET_KEY=<your secret key>
 python manage.py runmigtarions
 python manage.py runserver
 ```
