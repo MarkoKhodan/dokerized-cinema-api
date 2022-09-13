@@ -3,7 +3,7 @@
 API service for cinema management written on DRF
 
 ## Installing using Github
-
+### Mac Os
 ```shell
 git clone https://github.com/MarkoKhodan/dokerized-cinema-api.git
 cd dokerized-cinema-api
@@ -18,6 +18,23 @@ set SECRET_KEY=<your secret key>
 python manage.py runmigtarions
 python manage.py runserver
 ```
+### Windows
+```shell
+git clone https://github.com/MarkoKhodan/dokerized-cinema-api.git
+cd dokerized-cinema-api
+python3 -m venv venv
+source venv/Scripts/activate
+pip install -r requirements.txt
+set DB_HOST=<your db hostname>
+set DB_NAME=<your db name>
+set DB_USER=<your db username>
+set DB_PASSWORD=<your db user password>
+set SECRET_KEY=<your secret key>
+python manage.py runmigtarions
+python manage.py runserver
+```
+
+
 ### Run with docker
 
 ```shell
